@@ -1,22 +1,23 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { ListaUsuarios } from './admin/ListaUsuarios';
 
 function App() {
   return (
     <div className="App">
-<Router>
+      <Router>
         <Switch>
 
-        {/* <Route to="/productos/:id">
+          {/* <Route to="/productos/:id">
           <Producto/>
         </Route> */}
 
-        <Route to="/admin">
-          <Lista/>
-        </Route>
-        
+          <Route to="/admin">
+            <ListaUsuarios />
+          </Route>
+
           <Route to="/" exact>
-            
+
           </Route>
 
         </Switch>
